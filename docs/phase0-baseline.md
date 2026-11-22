@@ -53,7 +53,7 @@ Program.cs ── Game1 (MonoGame Game: menus, screens, content loading, Draw/Up
 
 **Legality.** `Piece.findMoves` generates pseudo-legal moves. `Bot.findmoves`, `Board.highlightSquares` and `Board.Checkmate` each do the same filtering on their own: place the piece on the destination, call `Board.IsKingInCheck`, then restore the piece.
 
-**Search.** `Bot.move()` calls `Minimax(board, 4, −99999999, 99999999)`, a fail-hard alpha-beta search to fixed depth 4. Black (the bot) is the maximiser, because `Bot.evaluate()` returns the negated white-positive sum. Moves are searched in board-scan order with no move ordering. Every node generates all legal moves before it tests `depth == 0`, so leaf nodes can detect checkmate and stalemate. Mate scores are `±(99999999 − depth)`, where `depth` is the remaining depth.
+**Search.** `Bot.move()` calls `Minimax(board, 4, −99999999, 99999999)`, an alpha-beta search to fixed depth 4. It returns unclamped best values (fail-soft). Black (the bot) is the maximiser, because `Bot.evaluate()` returns the negated white-positive sum. Moves are searched in board-scan order with no move ordering. Every node generates all legal moves before it tests `depth == 0`, so leaf nodes can detect checkmate and stalemate. Mate scores are `±(99999999 − depth)`, where `depth` is the remaining depth.
 
 **Evaluation.** Material (`pieceValue`: P 100, N 320, B 330, R 500, Q 900, K 20000, negative for black) plus one piece-square table per piece type and colour. Each table is a local `int[,]` built inside every `evaluate()` call. The black tables are exact vertical mirrors of the white tables: all 6 pairs were checked and none differ.
 
@@ -155,7 +155,7 @@ Node counts are not available yet, because the original `Minimax` has no counter
 
 | Lead | Status |
 |---|---|
-| `Bot.Minimax()` is depth-limited alpha-beta | Confirmed (fail-hard, depth 4, no ordering) |
+| `Bot.Minimax()` is depth-limited alpha-beta | Confirmed (fail-soft returns, depth 4, no move ordering) |
 | `makeMove` sets king state that `undoMove` does not restore | Confirmed, R01 |
 | Search ignores castling, en passant, double push, promotion | Confirmed, R02, R09, R10, R08 |
 | `IsKingInCheck` omits enemy-king attacks | Confirmed, R05; consequence R06 |
