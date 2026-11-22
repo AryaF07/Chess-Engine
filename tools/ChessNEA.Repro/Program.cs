@@ -89,7 +89,7 @@ namespace ChessNEA.Repro
             {
                 ["timestampUtc"] = DateTime.UtcNow.ToString("o"),
                 ["gitCommit"] = Git("rev-parse HEAD"),
-                ["gitDirty"] = (Git("status --porcelain").Length > 0).ToString(),
+                ["gitDirty"] = (Git("status --porcelain --untracked-files=no").Length > 0).ToString(),
                 ["engineUnderTest"] = "original engine code (Bot.cs, Board.cs, Pieces/*) unmodified from 396744d",
                 ["runtime"] = RuntimeInformation.FrameworkDescription,
                 ["targetFramework"] = AppContext.TargetFrameworkName ?? "",
