@@ -1,0 +1,263 @@
+{
+  "environment": {
+    "timestampUtc": "2026-11-22T21:40:50.9405145Z",
+    "gitCommit": "45b743032c4c44ef435d18b69f83c15b81cd4d8c",
+    "gitDirty": "False",
+    "engineUnderTest": "original engine code (Bot.cs, Board.cs, Pieces/*) unmodified from 396744d",
+    "runtime": ".NET 11.0.0",
+    "targetFramework": ".NETCoreApp,Version=v8.0",
+    "os": "Microsoft Windows 10.0.26300",
+    "arch": "X64",
+    "cpu": "AMD Ryzen 7 5700X 8-Core Processor",
+    "logicalProcessors": "16",
+    "configuration": "Release",
+    "debuggerAttached": "False",
+    "serverGC": "False",
+    "gcLatencyMode": "Interactive",
+    "tieredCompilation": "False"
+  },
+  "data": [
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 1,
+      "Expected": 20,
+      "Observed": 20,
+      "Mode": "raw",
+      "ElapsedMs": 0.799,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 2,
+      "Expected": 400,
+      "Observed": 400,
+      "Mode": "raw",
+      "ElapsedMs": 0.0634,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 3,
+      "Expected": 8902,
+      "Observed": 8902,
+      "Mode": "raw",
+      "ElapsedMs": 2.5165,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 4,
+      "Expected": 197281,
+      "Observed": 197281,
+      "Mode": "raw",
+      "ElapsedMs": 26.0137,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 1,
+      "Expected": 20,
+      "Observed": 20,
+      "Mode": "flags-restored",
+      "ElapsedMs": 0.0061,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 2,
+      "Expected": 400,
+      "Observed": 400,
+      "Mode": "flags-restored",
+      "ElapsedMs": 1.695,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 3,
+      "Expected": 8902,
+      "Observed": 8902,
+      "Mode": "flags-restored",
+      "ElapsedMs": 2.5856,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 4,
+      "Expected": 197281,
+      "Observed": 197281,
+      "Mode": "flags-restored",
+      "ElapsedMs": 30.5691,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "kiwipete",
+      "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "Depth": 1,
+      "Expected": 48,
+      "Observed": 48,
+      "Mode": "raw",
+      "ElapsedMs": 0.0158,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "kiwipete",
+      "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "Depth": 2,
+      "Expected": 2039,
+      "Observed": 2040,
+      "Mode": "raw",
+      "ElapsedMs": 0.2316,
+      "Error": null,
+      "Match": false
+    },
+    {
+      "Name": "kiwipete",
+      "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "Depth": 3,
+      "Expected": 97862,
+      "Observed": 93483,
+      "Mode": "raw",
+      "ElapsedMs": 22.7376,
+      "Error": null,
+      "Match": false
+    },
+    {
+      "Name": "kiwipete",
+      "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "Depth": 1,
+      "Expected": 48,
+      "Observed": 48,
+      "Mode": "flags-restored",
+      "ElapsedMs": 0.0131,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "kiwipete",
+      "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "Depth": 2,
+      "Expected": 2039,
+      "Observed": 2040,
+      "Mode": "flags-restored",
+      "ElapsedMs": 0.2646,
+      "Error": null,
+      "Match": false
+    },
+    {
+      "Name": "kiwipete",
+      "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "Depth": 3,
+      "Expected": 97862,
+      "Observed": 97968,
+      "Mode": "flags-restored",
+      "ElapsedMs": 25.9546,
+      "Error": null,
+      "Match": false
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 1,
+      "Expected": 14,
+      "Observed": 14,
+      "Mode": "raw",
+      "ElapsedMs": 0.0046,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 2,
+      "Expected": 191,
+      "Observed": 191,
+      "Mode": "raw",
+      "ElapsedMs": 0.0559,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 3,
+      "Expected": 2812,
+      "Observed": 2810,
+      "Mode": "raw",
+      "ElapsedMs": 0.5597,
+      "Error": null,
+      "Match": false
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 4,
+      "Expected": 43238,
+      "Observed": 43087,
+      "Mode": "raw",
+      "ElapsedMs": 11.0153,
+      "Error": null,
+      "Match": false
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 1,
+      "Expected": 14,
+      "Observed": 14,
+      "Mode": "flags-restored",
+      "ElapsedMs": 0.0028,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 2,
+      "Expected": 191,
+      "Observed": 191,
+      "Mode": "flags-restored",
+      "ElapsedMs": 0.0625,
+      "Error": null,
+      "Match": true
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 3,
+      "Expected": 2812,
+      "Observed": 2810,
+      "Mode": "flags-restored",
+      "ElapsedMs": 0.7139,
+      "Error": null,
+      "Match": false
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 4,
+      "Expected": 43238,
+      "Observed": 43087,
+      "Mode": "flags-restored",
+      "ElapsedMs": 13.1869,
+      "Error": null,
+      "Match": false
+    }
+  ]
+}
