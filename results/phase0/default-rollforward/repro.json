@@ -1,0 +1,173 @@
+{
+  "environment": {
+    "timestampUtc": "2026-11-22T21:40:44.2535458Z",
+    "gitCommit": "45b743032c4c44ef435d18b69f83c15b81cd4d8c",
+    "gitDirty": "False",
+    "engineUnderTest": "original engine code (Bot.cs, Board.cs, Pieces/*) unmodified from 396744d",
+    "runtime": ".NET 10.0.15",
+    "targetFramework": ".NETCoreApp,Version=v8.0",
+    "os": "Microsoft Windows 10.0.26300",
+    "arch": "X64",
+    "cpu": "AMD Ryzen 7 5700X 8-Core Processor",
+    "logicalProcessors": "16",
+    "configuration": "Release",
+    "debuggerAttached": "False",
+    "serverGC": "False",
+    "gcLatencyMode": "Interactive",
+    "tieredCompilation": "False"
+  },
+  "data": [
+    {
+      "Id": "R01",
+      "Title": "Search does not restore King.hasMoved",
+      "Position": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2  (Minimax depth 2, black to move)",
+      "Expected": "Position state identical before and after the search",
+      "Observed": "k@e8 hasMoved False -\u003E True; K@e1 hasMoved False -\u003E True",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R02",
+      "Title": "Castling in search moves only the king",
+      "Position": "4k2r/8/8/8/8/8/8/4K3 b k - 0 1  (Bot.makeMove ke8-g8)",
+      "Expected": "King on g8 and rook on f8",
+      "Observed": "king on g8, rook still on h8, f8 empty",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R03",
+      "Title": "Kingside castling allowed through an attacked square",
+      "Position": "5r1k/8/8/8/8/8/8/4K2R w K - 0 1",
+      "Expected": "Ke1-g1 not legal (f1 attacked by rook f8)",
+      "Observed": "Ke1-g1 returned by Bot.findmoves(true)",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R04",
+      "Title": "Queenside castling allowed while in check",
+      "Position": "4r2k/8/8/8/8/8/8/R3K3 w Q - 0 1",
+      "Expected": "Ke1-c1 not legal (king in check)",
+      "Observed": "IsKingInCheck(white)=True; Ke1-c1 returned by Bot.findmoves(true)",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R04c",
+      "Title": "Control: kingside castling while in check",
+      "Position": "4r2k/8/8/8/8/8/8/4K2R w K - 0 1",
+      "Expected": "Ke1-g1 not legal (king in check)",
+      "Observed": "Ke1-g1 not returned (the off-by-pixels loop re-tests e1 by accident)",
+      "Status": "CORRECT"
+    },
+    {
+      "Id": "R05",
+      "Title": "King may move next to the enemy king",
+      "Position": "8/8/8/8/8/4k3/8/4K3 w - - 0 1",
+      "Expected": "Only Kd1 and Kf1 are legal",
+      "Observed": "generated: Ke1-d2, Ke1-e2, Ke1-f2, Ke1-d1, Ke1-f1",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R06",
+      "Title": "Search crashes after a king capture",
+      "Position": "8/7p/8/4k3/8/4K3/P7/8 b - - 0 1  (Minimax depth 2)",
+      "Expected": "Search completes",
+      "Observed": "NullReferenceException in Board.IsKingInCheck",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R07",
+      "Title": "Bot promotion stores wrong X coordinate",
+      "Position": "7k/8/8/8/8/8/1p6/R6K b - - 0 1  (Bot.move)",
+      "Expected": "Queen on a1 with Position.X = 165",
+      "Observed": "Queen in array at a1 with Position.X = 0; Bot.evaluate() afterwards throws IndexOutOfRangeException",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R08",
+      "Title": "Search does not model promotion",
+      "Position": "7k/8/8/8/8/8/1p6/7K b - - 0 1  (static eval after each black move)",
+      "Expected": "Promotion b2-b1 scores far above any king move (pawn becomes a queen)",
+      "Observed": "kh8-g8=160, kh8-g7=150, kh8-h7=150, pb2-b1=100",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R09",
+      "Title": "En passant in search leaves the captured pawn",
+      "Position": "k7/8/8/8/3pP3/8/8/7K b - e3 0 1  (Bot.makeMove d4xe3)",
+      "Expected": "White pawn on e4 removed",
+      "Observed": "white pawn still on e4 after the capture",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R10",
+      "Title": "Bot double push does not enable en passant",
+      "Position": "rnbqkbnr/pppppppp/8/4P3/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1  (Bot.makeMove d7-d5)",
+      "Expected": "White may reply e5xd6 en passant",
+      "Observed": "e5xd6 not generated (movedtwoSquares never set by Bot.makeMove)",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R11",
+      "Title": "Mate scoring prefers a slower mate",
+      "Position": "k7/8/8/8/8/1r6/r7/7K b - - 0 1  (Minimax depth 4)",
+      "Expected": "Root plays the mate in one rb3-b1",
+      "Observed": "root move ka8-b8 score 99999998 (= largenumber - 1); rb3-b1 scores 99999996 (= largenumber - 3); white has legal replies after rb3-b1: False",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R12a",
+      "Title": "InsufficientMaterial: K v K",
+      "Position": "k7/8/8/8/8/8/8/K7 w - - 0 1",
+      "Expected": "True (no mate possible)",
+      "Observed": "True",
+      "Status": "CORRECT"
+    },
+    {
+      "Id": "R12b",
+      "Title": "InsufficientMaterial: KB v K",
+      "Position": "k7/8/8/8/8/8/8/KB6 w - - 0 1",
+      "Expected": "True (no mate possible)",
+      "Observed": "True",
+      "Status": "CORRECT"
+    },
+    {
+      "Id": "R12c",
+      "Title": "InsufficientMaterial: KB v KB, same-colour bishops",
+      "Position": "kb6/8/8/8/8/8/8/K1B5 w - - 0 1",
+      "Expected": "True (no mate possible)",
+      "Observed": "True",
+      "Status": "CORRECT"
+    },
+    {
+      "Id": "R12d",
+      "Title": "InsufficientMaterial: KBN v K",
+      "Position": "k7/8/8/8/8/8/8/KBN5 w - - 0 1",
+      "Expected": "False (mate can be forced)",
+      "Observed": "True",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R12e",
+      "Title": "InsufficientMaterial: KB v KB, opposite-colour bishops",
+      "Position": "kb6/8/8/8/8/8/8/KB6 w - - 0 1",
+      "Expected": "False (a (help)mate exists, so not a dead position)",
+      "Observed": "True",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R12f",
+      "Title": "InsufficientMaterial: KNN v K",
+      "Position": "k7/8/8/8/8/8/8/KNN5 w - - 0 1",
+      "Expected": "False (a (help)mate exists, so not a dead position)",
+      "Observed": "True",
+      "Status": "REPRODUCED"
+    },
+    {
+      "Id": "R12g",
+      "Title": "InsufficientMaterial: K\u002BP v K\u002BP, blocked pawns",
+      "Position": "k7/8/8/4p3/4P3/8/8/K7 w - - 0 1",
+      "Expected": "False (kings can capture pawns; mate still possible)",
+      "Observed": "True",
+      "Status": "REPRODUCED"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "environment": {
+    "timestampUtc": "2026-11-22T21:40:44.2535458Z",
+    "gitCommit": "45b743032c4c44ef435d18b69f83c15b81cd4d8c",
+    "gitDirty": "False",
+    "engineUnderTest": "original engine code (Bot.cs, Board.cs, Pieces/*) unmodified from 396744d",
+    "runtime": ".NET 10.0.15",
+    "targetFramework": ".NETCoreApp,Version=v8.0",
+    "os": "Microsoft Windows 10.0.26300",
+    "arch": "X64",
+    "cpu": "AMD Ryzen 7 5700X 8-Core Processor",
+    "logicalProcessors": "16",
+    "configuration": "Release",
+    "debuggerAttached": "False",
+    "serverGC": "False",
+    "gcLatencyMode": "Interactive",
+    "tieredCompilation": "False"
+  },
+  "data": [
+    {
+      "Name": "Bot.evaluate",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "CallsPerRepetition": 200000,
+      "NsPerCall": [
+        3111.5655,
+        2960.326,
+        2757.2335,
+        2789.601,
+        2709.689
+      ],
+      "BytesPerCall": [
+        9472.0002,
+        9472.0002,
+        9472.0002,
+        9472.0002,
+        9472.0002
+      ],
+      "MedianNsPerCall": 2789.601,
+      "MedianBytesPerCall": 9472.0002
+    },
+    {
+      "Name": "Bot.findmoves(white)",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "CallsPerRepetition": 20000,
+      "NsPerCall": [
+        4892.155,
+        4933.83,
+        4886.18,
+        4893.68,
+        5125.51
+      ],
+      "BytesPerCall": [
+        2048.002,
+        2048.002,
+        2048.002,
+        2048.002,
+        2048.002
+      ],
+      "MedianNsPerCall": 4893.68,
+      "MedianBytesPerCall": 2048.002
+    }
+  ]
+}
