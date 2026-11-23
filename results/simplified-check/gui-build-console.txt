@@ -1,0 +1,57 @@
+  Determining projects to restore...
+  Restoring dotnet tools
+  Tool 'dotnet-mgcb' (version '3.8.2.1105') was restored. Available commands: mgcb
+  Tool 'dotnet-mgcb-editor' (version '3.8.2.1105') was restored. Available commands: mgcb-editor
+  Tool 'dotnet-mgcb-editor-linux' (version '3.8.2.1105') was restored. Available commands: mgcb-editor-linux
+  Tool 'dotnet-mgcb-editor-windows' (version '3.8.2.1105') was restored. Available commands: mgcb-editor-windows
+  Tool 'dotnet-mgcb-editor-mac' (version '3.8.2.1105') was restored. Available commands: mgcb-editor-mac
+  
+  Restore was successful.
+  All projects are up-to-date for restore.
+  Tool 'dotnet-mgcb' (version '3.8.2.1105') was restored. Available commands: mgcb
+  Tool 'dotnet-mgcb-editor' (version '3.8.2.1105') was restored. Available commands: mgcb-editor
+  Tool 'dotnet-mgcb-editor-linux' (version '3.8.2.1105') was restored. Available commands: mgcb-editor-linux
+  Tool 'dotnet-mgcb-editor-windows' (version '3.8.2.1105') was restored. Available commands: mgcb-editor-windows
+  Tool 'dotnet-mgcb-editor-mac' (version '3.8.2.1105') was restored. Available commands: mgcb-editor-mac
+  
+  Restore was successful.
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/10minutes.PNG
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/1minute.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/3minutes.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/50moverule.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/BishopB.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/BishopW.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/blackwin.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/Board.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/Bot.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/endgame.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/File.spritefont
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/highlight.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/icon.ico
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/insufficientmaterial.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/KingB.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/KingW.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/KnightB.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/KnightW.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/PawnB.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/PawnW.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/playbutton.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/QueenB.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/QueenW.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/RookB.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/RookW.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/stalemate.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/stopwatch.png
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/title.spritefont
+  Skipping C:/Users/AryaF/Documents/Chess-Engine/Content/whitewin.png
+  ChessNEA.Engine -> C:\Users\AryaF\Documents\Chess-Engine\Engine\bin\Release\net10.0\ChessNEA.Engine.dll
+CSC : warning WFO0003: Remove high DPI settings from C:\Users\AryaF\Documents\Chess-Engine\app.manifest and configure via Application.SetHighDpiMode API or 'ApplicationHighDpiMode' project property (https://aka.ms/winforms-warnings/wfo0003) [C:\Users\AryaF\Documents\Chess-Engine\ChessNEA.csproj]
+  ChessNEA -> C:\Users\AryaF\Documents\Chess-Engine\bin\Release\net10.0-windows\ChessNEA.dll
+
+Build succeeded.
+
+CSC : warning WFO0003: Remove high DPI settings from C:\Users\AryaF\Documents\Chess-Engine\app.manifest and configure via Application.SetHighDpiMode API or 'ApplicationHighDpiMode' project property (https://aka.ms/winforms-warnings/wfo0003) [C:\Users\AryaF\Documents\Chess-Engine\ChessNEA.csproj]
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.51

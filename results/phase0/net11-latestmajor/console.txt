@@ -1,0 +1,125 @@
+timestampUtc: 2026-11-22T21:40:50.9405145Z
+gitCommit: 45b743032c4c44ef435d18b69f83c15b81cd4d8c
+gitDirty: False
+engineUnderTest: original engine code (Bot.cs, Board.cs, Pieces/*) unmodified from 396744d
+runtime: .NET 11.0.0
+targetFramework: .NETCoreApp,Version=v8.0
+os: Microsoft Windows 10.0.26300
+arch: X64
+cpu: AMD Ryzen 7 5700X 8-Core Processor
+logicalProcessors: 16
+configuration: Release
+debuggerAttached: False
+serverGC: False
+gcLatencyMode: Interactive
+tieredCompilation: False
+
+== Reproductions ==
+[REPRODUCED] R01 Search does not restore King.hasMoved
+    position: rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2  (Minimax depth 2, black to move)
+    expected: Position state identical before and after the search
+    observed: k@e8 hasMoved False -> True; K@e1 hasMoved False -> True
+[REPRODUCED] R02 Castling in search moves only the king
+    position: 4k2r/8/8/8/8/8/8/4K3 b k - 0 1  (Bot.makeMove ke8-g8)
+    expected: King on g8 and rook on f8
+    observed: king on g8, rook still on h8, f8 empty
+[REPRODUCED] R03 Kingside castling allowed through an attacked square
+    position: 5r1k/8/8/8/8/8/8/4K2R w K - 0 1
+    expected: Ke1-g1 not legal (f1 attacked by rook f8)
+    observed: Ke1-g1 returned by Bot.findmoves(true)
+[REPRODUCED] R04 Queenside castling allowed while in check
+    position: 4r2k/8/8/8/8/8/8/R3K3 w Q - 0 1
+    expected: Ke1-c1 not legal (king in check)
+    observed: IsKingInCheck(white)=True; Ke1-c1 returned by Bot.findmoves(true)
+[CORRECT] R04c Control: kingside castling while in check
+    position: 4r2k/8/8/8/8/8/8/4K2R w K - 0 1
+    expected: Ke1-g1 not legal (king in check)
+    observed: Ke1-g1 not returned (the off-by-pixels loop re-tests e1 by accident)
+[REPRODUCED] R05 King may move next to the enemy king
+    position: 8/8/8/8/8/4k3/8/4K3 w - - 0 1
+    expected: Only Kd1 and Kf1 are legal
+    observed: generated: Ke1-d2, Ke1-e2, Ke1-f2, Ke1-d1, Ke1-f1
+[REPRODUCED] R06 Search crashes after a king capture
+    position: 8/7p/8/4k3/8/4K3/P7/8 b - - 0 1  (Minimax depth 2)
+    expected: Search completes
+    observed: NullReferenceException in Board.IsKingInCheck
+[REPRODUCED] R07 Bot promotion stores wrong X coordinate
+    position: 7k/8/8/8/8/8/1p6/R6K b - - 0 1  (Bot.move)
+    expected: Queen on a1 with Position.X = 165
+    observed: Queen in array at a1 with Position.X = 0; Bot.evaluate() afterwards throws IndexOutOfRangeException
+[REPRODUCED] R08 Search does not model promotion
+    position: 7k/8/8/8/8/8/1p6/7K b - - 0 1  (static eval after each black move)
+    expected: Promotion b2-b1 scores far above any king move (pawn becomes a queen)
+    observed: kh8-g8=160, kh8-g7=150, kh8-h7=150, pb2-b1=100
+[REPRODUCED] R09 En passant in search leaves the captured pawn
+    position: k7/8/8/8/3pP3/8/8/7K b - e3 0 1  (Bot.makeMove d4xe3)
+    expected: White pawn on e4 removed
+    observed: white pawn still on e4 after the capture
+[REPRODUCED] R10 Bot double push does not enable en passant
+    position: rnbqkbnr/pppppppp/8/4P3/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1  (Bot.makeMove d7-d5)
+    expected: White may reply e5xd6 en passant
+    observed: e5xd6 not generated (movedtwoSquares never set by Bot.makeMove)
+[REPRODUCED] R11 Mate scoring prefers a slower mate
+    position: k7/8/8/8/8/1r6/r7/7K b - - 0 1  (Minimax depth 4)
+    expected: Root plays the mate in one rb3-b1
+    observed: root move ka8-b8 score 99999998 (= largenumber - 1); rb3-b1 scores 99999996 (= largenumber - 3); white has legal replies after rb3-b1: False
+[CORRECT] R12a InsufficientMaterial: K v K
+    position: k7/8/8/8/8/8/8/K7 w - - 0 1
+    expected: True (no mate possible)
+    observed: True
+[CORRECT] R12b InsufficientMaterial: KB v K
+    position: k7/8/8/8/8/8/8/KB6 w - - 0 1
+    expected: True (no mate possible)
+    observed: True
+[CORRECT] R12c InsufficientMaterial: KB v KB, same-colour bishops
+    position: kb6/8/8/8/8/8/8/K1B5 w - - 0 1
+    expected: True (no mate possible)
+    observed: True
+[REPRODUCED] R12d InsufficientMaterial: KBN v K
+    position: k7/8/8/8/8/8/8/KBN5 w - - 0 1
+    expected: False (mate can be forced)
+    observed: True
+[REPRODUCED] R12e InsufficientMaterial: KB v KB, opposite-colour bishops
+    position: kb6/8/8/8/8/8/8/KB6 w - - 0 1
+    expected: False (a (help)mate exists, so not a dead position)
+    observed: True
+[REPRODUCED] R12f InsufficientMaterial: KNN v K
+    position: k7/8/8/8/8/8/8/KNN5 w - - 0 1
+    expected: False (a (help)mate exists, so not a dead position)
+    observed: True
+[REPRODUCED] R12g InsufficientMaterial: K+P v K+P, blocked pawns
+    position: k7/8/8/4p3/4P3/8/8/K7 w - - 0 1
+    expected: False (kings can capture pawns; mate still possible)
+    observed: True
+
+== Perft with the original move pipeline ==
+  startpos   raw            d1: expected       20 observed       20 OK  (0.8 ms)
+  startpos   raw            d2: expected      400 observed      400 OK  (0.1 ms)
+  startpos   raw            d3: expected     8902 observed     8902 OK  (2.5 ms)
+  startpos   raw            d4: expected   197281 observed   197281 OK  (26.0 ms)
+  startpos   flags-restored d1: expected       20 observed       20 OK  (0.0 ms)
+  startpos   flags-restored d2: expected      400 observed      400 OK  (1.7 ms)
+  startpos   flags-restored d3: expected     8902 observed     8902 OK  (2.6 ms)
+  startpos   flags-restored d4: expected   197281 observed   197281 OK  (30.6 ms)
+  kiwipete   raw            d1: expected       48 observed       48 OK  (0.0 ms)
+  kiwipete   raw            d2: expected     2039 observed     2040 MISMATCH  (0.2 ms)
+  kiwipete   raw            d3: expected    97862 observed    93483 MISMATCH  (22.7 ms)
+  kiwipete   flags-restored d1: expected       48 observed       48 OK  (0.0 ms)
+  kiwipete   flags-restored d2: expected     2039 observed     2040 MISMATCH  (0.3 ms)
+  kiwipete   flags-restored d3: expected    97862 observed    97968 MISMATCH  (26.0 ms)
+  position3  raw            d1: expected       14 observed       14 OK  (0.0 ms)
+  position3  raw            d2: expected      191 observed      191 OK  (0.1 ms)
+  position3  raw            d3: expected     2812 observed     2810 MISMATCH  (0.6 ms)
+  position3  raw            d4: expected    43238 observed    43087 MISMATCH  (11.0 ms)
+  position3  flags-restored d1: expected       14 observed       14 OK  (0.0 ms)
+  position3  flags-restored d2: expected      191 observed      191 OK  (0.1 ms)
+  position3  flags-restored d3: expected     2812 observed     2810 MISMATCH  (0.7 ms)
+  position3  flags-restored d4: expected    43238 observed    43087 MISMATCH  (13.2 ms)
+
+== Micro measurements (start position) ==
+  Bot.evaluate: median 2063 ns/call, 9472.0 B/call
+  Bot.findmoves(white): median 4887 ns/call, 2048.0 B/call
+== Full search, depth 4, 7 runs ==
+  after-1.e4: median 153.1 ms, alloc 318,945,864 B 
+  italian: median 104.0 ms, alloc 197,022,136 B 
+  rook-endgame: median 13.1 ms, alloc 18,171,080 B 

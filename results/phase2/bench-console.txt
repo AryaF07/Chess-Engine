@@ -1,0 +1,20 @@
+== Micro measurements (start position) ==
+  Bot.Evaluate: median 3082 ns/call, 9472.0 B/call
+  Position.GenerateLegalMoves: median 2423 ns/call, 1784.0 B/call
+== Search, depth 4, 1 warm-up + 7 runs per position ==
+  startpos          nodes      7,220  median      39.9 ms  alloc     70,008,952 B  score         0 b1c3
+  after-e4          nodes     29,724  median     171.6 ms  alloc    312,248,576 B  score       -70 b8c6
+  italian           nodes     19,278  median     124.9 ms  alloc    204,245,384 B  score      -110 g8f6
+  qgd               nodes     13,649  median      91.5 ms  alloc    147,187,216 B  score        30 c4d5
+  ruy-closed        nodes     53,121  median     341.3 ms  alloc    578,161,328 B  score       -50 c8b7
+  kiwipete          nodes    597,938  median    5297.4 ms  alloc  7,491,010,296 B  score       -50 e2a6
+  cpw-position6     nodes    206,744  median    1550.8 ms  alloc  2,555,748,008 B  score       110 c3d5
+  cpw-position4     nodes     95,404  median     675.0 ms  alloc  1,159,326,608 B  score       615 g1h1
+  cpw-position5     nodes     18,113  median     145.1 ms  alloc    182,976,272 B  score      -275 d7c8q
+  legal-mate        nodes     15,797  median     123.0 ms  alloc    171,681,904 B  score -99999996 d5f6
+  rook-mate-in-one  nodes      1,631  median       3.6 ms  alloc      2,906,408 B  score  99999998 b3b1
+  rook-endgame      nodes      7,365  median      13.1 ms  alloc     18,556,136 B  score      -520 g7g8
+  cpw-position3     nodes      5,274  median      15.9 ms  alloc     20,543,408 B  score       -10 b4f4
+  pawn-endgame      nodes      1,111  median       1.6 ms  alloc      1,516,784 B  score      -100 e3f2
+  lucena            nodes      1,103  median       2.7 ms  alloc      2,857,632 B  score      -105 c1e1
+  total nodes 1,073,472, sum of medians 8597.5 ms, 124,859 nodes/s, allocated 12,918,974,912 B

@@ -1,0 +1,20 @@
+== Micro measurements (start position) ==
+  Bot.Evaluate: median 183 ns/call, 0.0 B/call
+  Position.GenerateLegalMoves: median 2154 ns/call, 1328.0 B/call
+== Search, depth 4, 1 warm-up + 7 runs per position ==
+  startpos          nodes      7,220  median      21.8 ms  alloc         10,968 B  gc     0.0 ms  score         0 b1c3
+  after-e4          nodes     29,724  median      89.1 ms  alloc         10,968 B  gc     0.0 ms  score       -70 b8c6
+  italian           nodes     19,278  median      72.0 ms  alloc         10,968 B  gc     0.0 ms  score      -110 g8f6
+  qgd               nodes     13,649  median      52.8 ms  alloc         10,968 B  gc     0.0 ms  score        30 c4d5
+  ruy-closed        nodes     53,121  median     196.3 ms  alloc         10,968 B  gc     0.0 ms  score       -50 c8b7
+  kiwipete          nodes    597,938  median    3356.1 ms  alloc        360,696 B  gc     0.0 ms  score       -50 e2a6
+  cpw-position6     nodes    206,744  median     980.3 ms  alloc         10,968 B  gc     0.0 ms  score       110 c3d5
+  cpw-position4     nodes     95,404  median     439.0 ms  alloc      3,660,696 B  gc     0.0 ms  score       615 g1h1
+  cpw-position5     nodes     18,113  median      97.2 ms  alloc        256,040 B  gc     0.0 ms  score      -275 d7c8q
+  legal-mate        nodes     15,797  median      81.2 ms  alloc         10,968 B  gc     0.0 ms  score -99999996 d5f6
+  rook-mate-in-one  nodes      1,631  median       3.3 ms  alloc         10,968 B  gc     0.0 ms  score  99999998 b3b1
+  rook-endgame      nodes      7,365  median       8.9 ms  alloc         10,968 B  gc     0.0 ms  score      -520 g7g8
+  cpw-position3     nodes      5,274  median      12.2 ms  alloc         10,968 B  gc     0.0 ms  score       -10 b4f4
+  pawn-endgame      nodes      1,111  median       1.5 ms  alloc         10,968 B  gc     0.0 ms  score      -100 e3f2
+  lucena            nodes      1,103  median       2.4 ms  alloc         43,608 B  gc     0.0 ms  score      -105 c1e1
+  total nodes 1,073,472, sum of medians 5414.2 ms, 198,271 nodes/s, allocated 4,441,688 B, GC pauses 0.0 ms

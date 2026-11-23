@@ -1,0 +1,1406 @@
+{
+  "environment": {
+    "timestampUtc": "2026-11-22T23:03:52.0152942Z",
+    "gitCommit": "5c78cb2519e2f6bb52f334175e35581d06e77810",
+    "gitDirty": "False",
+    "engineUnderTest": "ChessNEA.Engine (Engine/)",
+    "runtime": ".NET 10.0.15",
+    "targetFramework": ".NETCoreApp,Version=v10.0",
+    "os": "Microsoft Windows 10.0.26300",
+    "arch": "X64",
+    "cpu": "AMD Ryzen 7 5700X 8-Core Processor",
+    "logicalProcessors": "16",
+    "configuration": "Release",
+    "debuggerAttached": "False",
+    "serverGC": "False",
+    "gcLatencyMode": "Interactive",
+    "tieredCompilation": "False",
+    "suite": "suite-v1.txt",
+    "suiteSha256": "2be71efec97707e55cf698a767e25b3b2c836a6e27df9c3827f4c23cf7be33f1",
+    "suitePositions": "15",
+    "benchDepth": "4",
+    "benchRuns": "7",
+    "benchWarmups": "1",
+    "alphaBeta": "True",
+    "transpositionTable": "none"
+  },
+  "data": {
+    "summary": {
+      "Positions": 15,
+      "TotalNodes": 1073472,
+      "TotalLeafEvaluations": 1006418,
+      "SumOfMedianMs": 8159.433999999999,
+      "NodesPerSecond": 131562.06668256648,
+      "TotalMedianAllocatedBytes": 12918974912,
+      "SumOfMedianGcPauseMs": 31.980000000000004,
+      "Aggregation": "Totals are sums over positions; SumOfMedianMs sums each position\u0027s median; NodesPerSecond = TotalNodes / SumOfMedianMs."
+    },
+    "positions": [
+      {
+        "Name": "startpos",
+        "Category": "opening",
+        "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "Depth": 4,
+        "Score": 0,
+        "BestMove": "b1c3",
+        "Counters": {
+          "Nodes": 7220,
+          "LeafEvaluations": 5910,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 1310,
+          "Cutoffs": 1105,
+          "LegalMovesGenerated": 179944
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 37.1343,
+            "AllocatedBytes": 70008952,
+            "Gen0": 4,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.153
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 37.2777,
+            "AllocatedBytes": 70008952,
+            "Gen0": 4,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.191
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 37.5528,
+            "AllocatedBytes": 70008952,
+            "Gen0": 4,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.184
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 37.1322,
+            "AllocatedBytes": 70008952,
+            "Gen0": 4,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.173
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 37.0393,
+            "AllocatedBytes": 70008952,
+            "Gen0": 4,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.184
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 37.0914,
+            "AllocatedBytes": 70008952,
+            "Gen0": 4,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.18
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 36.9818,
+            "AllocatedBytes": 70008952,
+            "Gen0": 4,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.167
+          }
+        ],
+        "MedianMs": 37.1322,
+        "MinMs": 36.9818,
+        "MaxMs": 37.5528,
+        "MedianAllocatedBytes": 70008952,
+        "MedianGcPauseMs": 0.18,
+        "NodesPerSecond": 194440.40482384563,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "after-e4",
+        "Category": "opening",
+        "Fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "Depth": 4,
+        "Score": -70,
+        "BestMove": "b8c6",
+        "Counters": {
+          "Nodes": 29724,
+          "LeafEvaluations": 26900,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 2824,
+          "Cutoffs": 2424,
+          "LegalMovesGenerated": 727099
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 158.2476,
+            "AllocatedBytes": 312248576,
+            "Gen0": 18,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.64
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 166.1274,
+            "AllocatedBytes": 312248576,
+            "Gen0": 18,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.78
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 158.7658,
+            "AllocatedBytes": 312248576,
+            "Gen0": 18,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.682
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 158.8797,
+            "AllocatedBytes": 312248576,
+            "Gen0": 18,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.68
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 158.3238,
+            "AllocatedBytes": 312248576,
+            "Gen0": 18,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.657
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 165.937,
+            "AllocatedBytes": 312248576,
+            "Gen0": 18,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.735
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 163.2252,
+            "AllocatedBytes": 312248576,
+            "Gen0": 18,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.763
+          }
+        ],
+        "MedianMs": 158.8797,
+        "MinMs": 158.2476,
+        "MaxMs": 166.1274,
+        "MedianAllocatedBytes": 312248576,
+        "MedianGcPauseMs": 0.682,
+        "NodesPerSecond": 187084.94540208724,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "italian",
+        "Category": "opening",
+        "Fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "Depth": 4,
+        "Score": -110,
+        "BestMove": "g8f6",
+        "Counters": {
+          "Nodes": 19278,
+          "LeafEvaluations": 16859,
+          "TerminalNodes": 7,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 2412,
+          "Cutoffs": 2068,
+          "LegalMovesGenerated": 547707
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 117.6147,
+            "AllocatedBytes": 204245384,
+            "Gen0": 12,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.519
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 116.1024,
+            "AllocatedBytes": 204245384,
+            "Gen0": 12,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.491
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 115.582,
+            "AllocatedBytes": 204245384,
+            "Gen0": 12,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.467
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 123.5082,
+            "AllocatedBytes": 204245384,
+            "Gen0": 12,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.587
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 124.6693,
+            "AllocatedBytes": 204245384,
+            "Gen0": 12,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.602
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 125.5819,
+            "AllocatedBytes": 204245384,
+            "Gen0": 12,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.638
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 118.0209,
+            "AllocatedBytes": 204245384,
+            "Gen0": 12,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.499
+          }
+        ],
+        "MedianMs": 118.0209,
+        "MinMs": 115.582,
+        "MaxMs": 125.5819,
+        "MedianAllocatedBytes": 204245384,
+        "MedianGcPauseMs": 0.519,
+        "NodesPerSecond": 163343.95009697435,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "qgd",
+        "Category": "opening",
+        "Fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        "Depth": 4,
+        "Score": 30,
+        "BestMove": "c4d5",
+        "Counters": {
+          "Nodes": 13649,
+          "LeafEvaluations": 11711,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 1938,
+          "Cutoffs": 1723,
+          "LegalMovesGenerated": 455189
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 88.5078,
+            "AllocatedBytes": 147187216,
+            "Gen0": 8,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.378
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 89.8712,
+            "AllocatedBytes": 147187216,
+            "Gen0": 8,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.495
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 85.9007,
+            "AllocatedBytes": 147187216,
+            "Gen0": 8,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.383
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 84.8089,
+            "AllocatedBytes": 147187216,
+            "Gen0": 8,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.349
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 84.5292,
+            "AllocatedBytes": 147187216,
+            "Gen0": 8,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.401
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 83.3204,
+            "AllocatedBytes": 147187216,
+            "Gen0": 8,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.349
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 83.1645,
+            "AllocatedBytes": 147187216,
+            "Gen0": 8,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.305
+          }
+        ],
+        "MedianMs": 84.8089,
+        "MinMs": 83.1645,
+        "MaxMs": 89.8712,
+        "MedianAllocatedBytes": 147187216,
+        "MedianGcPauseMs": 0.378,
+        "NodesPerSecond": 160938.29774941076,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "ruy-closed",
+        "Category": "middlegame",
+        "Fen": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 b - - 0 9",
+        "Depth": 4,
+        "Score": -50,
+        "BestMove": "c8b7",
+        "Counters": {
+          "Nodes": 53121,
+          "LeafEvaluations": 46923,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 6198,
+          "Cutoffs": 5635,
+          "LegalMovesGenerated": 1635635
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 316.3731,
+            "AllocatedBytes": 578161328,
+            "Gen0": 34,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 1.273
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 321.0835,
+            "AllocatedBytes": 578161328,
+            "Gen0": 34,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 1.344
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 316.8594,
+            "AllocatedBytes": 578161328,
+            "Gen0": 34,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 1.251
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 321.0842,
+            "AllocatedBytes": 578161328,
+            "Gen0": 34,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 1.364
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 334.7059,
+            "AllocatedBytes": 578161328,
+            "Gen0": 34,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 1.37
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 323.8321,
+            "AllocatedBytes": 578161328,
+            "Gen0": 34,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 1.255
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 316.1817,
+            "AllocatedBytes": 578161328,
+            "Gen0": 34,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 1.247
+          }
+        ],
+        "MedianMs": 321.0835,
+        "MinMs": 316.1817,
+        "MaxMs": 334.7059,
+        "MedianAllocatedBytes": 578161328,
+        "MedianGcPauseMs": 1.273,
+        "NodesPerSecond": 165442.9455266309,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "kiwipete",
+        "Category": "middlegame",
+        "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+        "Depth": 4,
+        "Score": -50,
+        "BestMove": "e2a6",
+        "Counters": {
+          "Nodes": 597938,
+          "LeafEvaluations": 568945,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 28993,
+          "Cutoffs": 26959,
+          "LegalMovesGenerated": 28610705
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 4827.6042,
+            "AllocatedBytes": 7491010296,
+            "Gen0": 447,
+            "Gen1": 4,
+            "Gen2": 0,
+            "GcPauseMs": 16.733
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 5035.6395,
+            "AllocatedBytes": 7491010296,
+            "Gen0": 447,
+            "Gen1": 4,
+            "Gen2": 0,
+            "GcPauseMs": 19.693
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 5023.612,
+            "AllocatedBytes": 7491010296,
+            "Gen0": 447,
+            "Gen1": 4,
+            "Gen2": 0,
+            "GcPauseMs": 19.17
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 5012.6429,
+            "AllocatedBytes": 7491010296,
+            "Gen0": 447,
+            "Gen1": 4,
+            "Gen2": 0,
+            "GcPauseMs": 21.559
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 4992.7549,
+            "AllocatedBytes": 7491010296,
+            "Gen0": 447,
+            "Gen1": 4,
+            "Gen2": 0,
+            "GcPauseMs": 19.985
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 4830.5317,
+            "AllocatedBytes": 7491010296,
+            "Gen0": 447,
+            "Gen1": 4,
+            "Gen2": 0,
+            "GcPauseMs": 16.537
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 4921.6997,
+            "AllocatedBytes": 7491010296,
+            "Gen0": 447,
+            "Gen1": 4,
+            "Gen2": 0,
+            "GcPauseMs": 18.183
+          }
+        ],
+        "MedianMs": 4992.7549,
+        "MinMs": 4827.6042,
+        "MaxMs": 5035.6395,
+        "MedianAllocatedBytes": 7491010296,
+        "MedianGcPauseMs": 19.17,
+        "NodesPerSecond": 119761.13628169491,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "cpw-position6",
+        "Category": "middlegame",
+        "Fen": "r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10",
+        "Depth": 4,
+        "Score": 110,
+        "BestMove": "c3d5",
+        "Counters": {
+          "Nodes": 206744,
+          "LeafEvaluations": 195467,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 11277,
+          "Cutoffs": 9801,
+          "LegalMovesGenerated": 8718431
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 1528.6821,
+            "AllocatedBytes": 2555748008,
+            "Gen0": 152,
+            "Gen1": 1,
+            "Gen2": 0,
+            "GcPauseMs": 6.353
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 1516.3824,
+            "AllocatedBytes": 2555748008,
+            "Gen0": 152,
+            "Gen1": 1,
+            "Gen2": 0,
+            "GcPauseMs": 6.358
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 1475.9533,
+            "AllocatedBytes": 2555748008,
+            "Gen0": 152,
+            "Gen1": 1,
+            "Gen2": 0,
+            "GcPauseMs": 5.736
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 1486.4611,
+            "AllocatedBytes": 2555748008,
+            "Gen0": 152,
+            "Gen1": 1,
+            "Gen2": 0,
+            "GcPauseMs": 5.727
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 1474.0641,
+            "AllocatedBytes": 2555748008,
+            "Gen0": 152,
+            "Gen1": 1,
+            "Gen2": 0,
+            "GcPauseMs": 5.668
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 1486.2969,
+            "AllocatedBytes": 2555748008,
+            "Gen0": 152,
+            "Gen1": 1,
+            "Gen2": 0,
+            "GcPauseMs": 5.87
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 1505.2108,
+            "AllocatedBytes": 2555748008,
+            "Gen0": 152,
+            "Gen1": 1,
+            "Gen2": 0,
+            "GcPauseMs": 6.152
+          }
+        ],
+        "MedianMs": 1486.4611,
+        "MinMs": 1474.0641,
+        "MaxMs": 1528.6821,
+        "MedianAllocatedBytes": 2555748008,
+        "MedianGcPauseMs": 5.87,
+        "NodesPerSecond": 139084.70258656616,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "cpw-position4",
+        "Category": "tactical",
+        "Fen": "r3k2r/Pppp1ppp/1b3nbN/nP6/BBP1P3/q4N2/Pp1P2PP/R2Q1RK1 w kq - 0 1",
+        "Depth": 4,
+        "Score": 615,
+        "BestMove": "g1h1",
+        "Counters": {
+          "Nodes": 95404,
+          "LeafEvaluations": 92416,
+          "TerminalNodes": 17,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 2971,
+          "Cutoffs": 2562,
+          "LegalMovesGenerated": 3557038
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 670.5046,
+            "AllocatedBytes": 1159326608,
+            "Gen0": 69,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 2.699
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 672.6761,
+            "AllocatedBytes": 1159326608,
+            "Gen0": 69,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 2.674
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 670.6976,
+            "AllocatedBytes": 1159326608,
+            "Gen0": 69,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 2.855
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 655.9619,
+            "AllocatedBytes": 1159326608,
+            "Gen0": 69,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 2.576
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 674.4857,
+            "AllocatedBytes": 1159326608,
+            "Gen0": 69,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 2.892
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 675.3449,
+            "AllocatedBytes": 1159326608,
+            "Gen0": 69,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 2.9
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 682.5144,
+            "AllocatedBytes": 1159326608,
+            "Gen0": 69,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 3.052
+          }
+        ],
+        "MedianMs": 672.6761,
+        "MinMs": 655.9619,
+        "MaxMs": 682.5144,
+        "MedianAllocatedBytes": 1159326608,
+        "MedianGcPauseMs": 2.855,
+        "NodesPerSecond": 141827.5452331367,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "cpw-position5",
+        "Category": "tactical",
+        "Fen": "rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQK2R w KQ - 1 8",
+        "Depth": 4,
+        "Score": -275,
+        "BestMove": "d7c8q",
+        "Counters": {
+          "Nodes": 18113,
+          "LeafEvaluations": 14883,
+          "TerminalNodes": 30,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 3200,
+          "Cutoffs": 2976,
+          "LegalMovesGenerated": 776742
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 133.5872,
+            "AllocatedBytes": 182976272,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.428
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 132.8748,
+            "AllocatedBytes": 182976272,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.428
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 141.2627,
+            "AllocatedBytes": 182976272,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.473
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 138.8544,
+            "AllocatedBytes": 182976272,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.516
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 132.5943,
+            "AllocatedBytes": 182976272,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.454
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 132.5748,
+            "AllocatedBytes": 182976272,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.425
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 133.4724,
+            "AllocatedBytes": 182976272,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.468
+          }
+        ],
+        "MedianMs": 133.4724,
+        "MinMs": 132.5748,
+        "MaxMs": 141.2627,
+        "MedianAllocatedBytes": 182976272,
+        "MedianGcPauseMs": 0.454,
+        "NodesPerSecond": 135705.95868509146,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "legal-mate",
+        "Category": "tactical",
+        "Fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 10",
+        "Depth": 4,
+        "Score": -99999996,
+        "BestMove": "d5f6",
+        "Counters": {
+          "Nodes": 15797,
+          "LeafEvaluations": 13173,
+          "TerminalNodes": 18,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 2606,
+          "Cutoffs": 2437,
+          "LegalMovesGenerated": 647884
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 111.7344,
+            "AllocatedBytes": 171681904,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.363
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 113.9103,
+            "AllocatedBytes": 171681904,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.433
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 120.1085,
+            "AllocatedBytes": 171681904,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.477
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 120.654,
+            "AllocatedBytes": 171681904,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.492
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 118.0729,
+            "AllocatedBytes": 171681904,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.535
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 118.511,
+            "AllocatedBytes": 171681904,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.46
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 116.3593,
+            "AllocatedBytes": 171681904,
+            "Gen0": 10,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.465
+          }
+        ],
+        "MedianMs": 118.0729,
+        "MinMs": 111.7344,
+        "MaxMs": 120.654,
+        "MedianAllocatedBytes": 171681904,
+        "MedianGcPauseMs": 0.465,
+        "NodesPerSecond": 133790.22620770725,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "rook-mate-in-one",
+        "Category": "tactical",
+        "Fen": "k7/8/8/8/8/1r6/r7/7K b - - 0 1",
+        "Depth": 4,
+        "Score": 99999998,
+        "BestMove": "b3b1",
+        "Counters": {
+          "Nodes": 1631,
+          "LeafEvaluations": 777,
+          "TerminalNodes": 18,
+          "DrawRuleNodes": 5,
+          "InteriorNodes": 831,
+          "Cutoffs": 797,
+          "LegalMovesGenerated": 24582
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 3.9113,
+            "AllocatedBytes": 2906408,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 3.6726,
+            "AllocatedBytes": 2906408,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 3.624,
+            "AllocatedBytes": 2906408,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 3.7805,
+            "AllocatedBytes": 2906408,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 3.5804,
+            "AllocatedBytes": 2906408,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 3.5532,
+            "AllocatedBytes": 2906408,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 3.5523,
+            "AllocatedBytes": 2906408,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 3.624,
+        "MinMs": 3.5523,
+        "MaxMs": 3.9113,
+        "MedianAllocatedBytes": 2906408,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 450055.1876379691,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "rook-endgame",
+        "Category": "endgame",
+        "Fen": "8/5pk1/6p1/8/8/6P1/5PK1/3R4 b - - 0 1",
+        "Depth": 4,
+        "Score": -520,
+        "BestMove": "g7g8",
+        "Counters": {
+          "Nodes": 7365,
+          "LeafEvaluations": 6647,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 718,
+          "Cutoffs": 429,
+          "LegalMovesGenerated": 57094
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 12.4343,
+            "AllocatedBytes": 18556136,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.035
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 12.4234,
+            "AllocatedBytes": 18556136,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.066
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 12.5281,
+            "AllocatedBytes": 18556136,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.062
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 12.4143,
+            "AllocatedBytes": 18556136,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.066
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 12.6793,
+            "AllocatedBytes": 18556136,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.088
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 12.7796,
+            "AllocatedBytes": 18556136,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.076
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 12.5565,
+            "AllocatedBytes": 18556136,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.064
+          }
+        ],
+        "MedianMs": 12.5281,
+        "MinMs": 12.4143,
+        "MaxMs": 12.7796,
+        "MedianAllocatedBytes": 18556136,
+        "MedianGcPauseMs": 0.066,
+        "NodesPerSecond": 587878.4492460948,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "cpw-position3",
+        "Category": "endgame",
+        "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+        "Depth": 4,
+        "Score": -10,
+        "BestMove": "b4f4",
+        "Counters": {
+          "Nodes": 5274,
+          "LeafEvaluations": 4290,
+          "TerminalNodes": 1,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 983,
+          "Cutoffs": 815,
+          "LegalMovesGenerated": 84421
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 15.4293,
+            "AllocatedBytes": 20543408,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.039
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 15.5424,
+            "AllocatedBytes": 20543408,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.068
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 16.7242,
+            "AllocatedBytes": 20543408,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.091
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 15.6471,
+            "AllocatedBytes": 20543408,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.081
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 15.5012,
+            "AllocatedBytes": 20543408,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.072
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 15.3675,
+            "AllocatedBytes": 20543408,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.065
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 15.3634,
+            "AllocatedBytes": 20543408,
+            "Gen0": 1,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0.061
+          }
+        ],
+        "MedianMs": 15.5012,
+        "MinMs": 15.3634,
+        "MaxMs": 16.7242,
+        "MedianAllocatedBytes": 20543408,
+        "MedianGcPauseMs": 0.068,
+        "NodesPerSecond": 340231.7239955616,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "pawn-endgame",
+        "Category": "endgame",
+        "Fen": "8/8/4k3/8/2P5/4K3/8/8 w - - 0 1",
+        "Depth": 4,
+        "Score": -100,
+        "BestMove": "e3f2",
+        "Counters": {
+          "Nodes": 1111,
+          "LeafEvaluations": 788,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 11,
+          "InteriorNodes": 312,
+          "Cutoffs": 220,
+          "LegalMovesGenerated": 9091
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 1.636,
+            "AllocatedBytes": 1516784,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 1.6467,
+            "AllocatedBytes": 1516784,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 1.6281,
+            "AllocatedBytes": 1516784,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 1.7098,
+            "AllocatedBytes": 1516784,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 1.6314,
+            "AllocatedBytes": 1516784,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 1.6428,
+            "AllocatedBytes": 1516784,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 1.7098,
+            "AllocatedBytes": 1516784,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 1.6428,
+        "MinMs": 1.6281,
+        "MaxMs": 1.7098,
+        "MedianAllocatedBytes": 1516784,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 676284.3925006087,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "lucena",
+        "Category": "endgame",
+        "Fen": "1K1k4/1P6/8/8/8/8/r7/2R5 w - - 0 1",
+        "Depth": 4,
+        "Score": -105,
+        "BestMove": "c1e1",
+        "Counters": {
+          "Nodes": 1103,
+          "LeafEvaluations": 729,
+          "TerminalNodes": 4,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 370,
+          "Cutoffs": 323,
+          "LegalMovesGenerated": 16872
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 2.7829,
+            "AllocatedBytes": 2857632,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 2,
+            "ElapsedMs": 2.7753,
+            "AllocatedBytes": 2857632,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 3,
+            "ElapsedMs": 2.7979,
+            "AllocatedBytes": 2857632,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 4,
+            "ElapsedMs": 2.7441,
+            "AllocatedBytes": 2857632,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 5,
+            "ElapsedMs": 2.798,
+            "AllocatedBytes": 2857632,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 6,
+            "ElapsedMs": 2.7496,
+            "AllocatedBytes": 2857632,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          },
+          {
+            "Run": 7,
+            "ElapsedMs": 2.6676,
+            "AllocatedBytes": 2857632,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 2.7753,
+        "MinMs": 2.6676,
+        "MaxMs": 2.798,
+        "MedianAllocatedBytes": 2857632,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 397434.5115843332,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      }
+    ]
+  }
+}

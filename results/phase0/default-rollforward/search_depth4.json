@@ -1,0 +1,270 @@
+{
+  "environment": {
+    "timestampUtc": "2026-11-22T21:40:44.2535458Z",
+    "gitCommit": "45b743032c4c44ef435d18b69f83c15b81cd4d8c",
+    "gitDirty": "False",
+    "engineUnderTest": "original engine code (Bot.cs, Board.cs, Pieces/*) unmodified from 396744d",
+    "runtime": ".NET 10.0.15",
+    "targetFramework": ".NETCoreApp,Version=v8.0",
+    "os": "Microsoft Windows 10.0.26300",
+    "arch": "X64",
+    "cpu": "AMD Ryzen 7 5700X 8-Core Processor",
+    "logicalProcessors": "16",
+    "configuration": "Release",
+    "debuggerAttached": "False",
+    "serverGC": "False",
+    "gcLatencyMode": "Interactive",
+    "tieredCompilation": "False"
+  },
+  "data": [
+    {
+      "Name": "after-1.e4",
+      "Fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "Depth": 4,
+      "Warmups": 1,
+      "Samples": [
+        {
+          "Run": 1,
+          "ElapsedMs": 179.1092,
+          "AllocatedBytes": 318945864,
+          "Gen0": 19,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -70,
+          "BestMove": "nb8-c6"
+        },
+        {
+          "Run": 2,
+          "ElapsedMs": 177.2127,
+          "AllocatedBytes": 318945864,
+          "Gen0": 19,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -70,
+          "BestMove": "nb8-c6"
+        },
+        {
+          "Run": 3,
+          "ElapsedMs": 169.4673,
+          "AllocatedBytes": 318945864,
+          "Gen0": 19,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -70,
+          "BestMove": "nb8-c6"
+        },
+        {
+          "Run": 4,
+          "ElapsedMs": 170.2351,
+          "AllocatedBytes": 318945864,
+          "Gen0": 19,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -70,
+          "BestMove": "nb8-c6"
+        },
+        {
+          "Run": 5,
+          "ElapsedMs": 169.8749,
+          "AllocatedBytes": 318945864,
+          "Gen0": 19,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -70,
+          "BestMove": "nb8-c6"
+        },
+        {
+          "Run": 6,
+          "ElapsedMs": 170.0844,
+          "AllocatedBytes": 318945864,
+          "Gen0": 19,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -70,
+          "BestMove": "nb8-c6"
+        },
+        {
+          "Run": 7,
+          "ElapsedMs": 167.8167,
+          "AllocatedBytes": 318945864,
+          "Gen0": 19,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -70,
+          "BestMove": "nb8-c6"
+        }
+      ],
+      "MedianMs": 170.0844,
+      "MinMs": 167.8167,
+      "MaxMs": 179.1092,
+      "MedianAllocatedBytes": 318945864,
+      "Error": null
+    },
+    {
+      "Name": "italian",
+      "Fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "Depth": 4,
+      "Warmups": 1,
+      "Samples": [
+        {
+          "Run": 1,
+          "ElapsedMs": 120.0456,
+          "AllocatedBytes": 197022136,
+          "Gen0": 11,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -110,
+          "BestMove": "ng8-f6"
+        },
+        {
+          "Run": 2,
+          "ElapsedMs": 118.678,
+          "AllocatedBytes": 197022136,
+          "Gen0": 11,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -110,
+          "BestMove": "ng8-f6"
+        },
+        {
+          "Run": 3,
+          "ElapsedMs": 119.1718,
+          "AllocatedBytes": 197022136,
+          "Gen0": 11,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -110,
+          "BestMove": "ng8-f6"
+        },
+        {
+          "Run": 4,
+          "ElapsedMs": 122.992,
+          "AllocatedBytes": 197022136,
+          "Gen0": 11,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -110,
+          "BestMove": "ng8-f6"
+        },
+        {
+          "Run": 5,
+          "ElapsedMs": 124.2594,
+          "AllocatedBytes": 197022136,
+          "Gen0": 11,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -110,
+          "BestMove": "ng8-f6"
+        },
+        {
+          "Run": 6,
+          "ElapsedMs": 121.198,
+          "AllocatedBytes": 197022136,
+          "Gen0": 11,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -110,
+          "BestMove": "ng8-f6"
+        },
+        {
+          "Run": 7,
+          "ElapsedMs": 120.226,
+          "AllocatedBytes": 197022136,
+          "Gen0": 11,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -110,
+          "BestMove": "ng8-f6"
+        }
+      ],
+      "MedianMs": 120.226,
+      "MinMs": 118.678,
+      "MaxMs": 124.2594,
+      "MedianAllocatedBytes": 197022136,
+      "Error": null
+    },
+    {
+      "Name": "rook-endgame",
+      "Fen": "8/5pk1/6p1/8/8/6P1/5PK1/3R4 b - - 0 1",
+      "Depth": 4,
+      "Warmups": 1,
+      "Samples": [
+        {
+          "Run": 1,
+          "ElapsedMs": 15.4911,
+          "AllocatedBytes": 18171080,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -520,
+          "BestMove": "kg7-g8"
+        },
+        {
+          "Run": 2,
+          "ElapsedMs": 15.362,
+          "AllocatedBytes": 18171080,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -520,
+          "BestMove": "kg7-g8"
+        },
+        {
+          "Run": 3,
+          "ElapsedMs": 15.1626,
+          "AllocatedBytes": 18171080,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -520,
+          "BestMove": "kg7-g8"
+        },
+        {
+          "Run": 4,
+          "ElapsedMs": 15.6355,
+          "AllocatedBytes": 18171080,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -520,
+          "BestMove": "kg7-g8"
+        },
+        {
+          "Run": 5,
+          "ElapsedMs": 15.1422,
+          "AllocatedBytes": 18171080,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -520,
+          "BestMove": "kg7-g8"
+        },
+        {
+          "Run": 6,
+          "ElapsedMs": 15.0757,
+          "AllocatedBytes": 18171080,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -520,
+          "BestMove": "kg7-g8"
+        },
+        {
+          "Run": 7,
+          "ElapsedMs": 15.0322,
+          "AllocatedBytes": 18171080,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Score": -520,
+          "BestMove": "kg7-g8"
+        }
+      ],
+      "MedianMs": 15.1626,
+      "MinMs": 15.0322,
+      "MaxMs": 15.6355,
+      "MedianAllocatedBytes": 18171080,
+      "Error": null
+    }
+  ]
+}

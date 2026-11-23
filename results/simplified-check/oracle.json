@@ -1,0 +1,22 @@
+{
+  "oracle": "python-chess 1.11.2",
+  "input": "results/simplified-check/random-positions.json",
+  "seed": 1,
+  "suite": "suite-v1.txt",
+  "suiteSha256": "fc0bbe5d069cc3694f2a90b6dc02961ceb3de97ad9ca3b6b03b9c20eb27c1ff7",
+  "positions": 20000,
+  "legalMovesCompared": 346571,
+  "perft2NodesCompared": 7336915,
+  "features": {
+    "castling moves": 453,
+    "en-passant moves": 100,
+    "positions in check": 1487,
+    "promotion moves": 1284,
+    "status Checkmate": 566,
+    "status FiftyMoveRule": 58,
+    "status InsufficientMaterial": 3330,
+    "status Ongoing": 15757,
+    "status Stalemate": 289
+  },
+  "mismatches": []
+}

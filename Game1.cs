@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ChessNEA.Engine;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -196,7 +197,6 @@ namespace ChessNEA
                 GraphicsDevice.Clear(Color.Black);
                 _spriteBatch.DrawString(Title, "Chess", new Vector2(310, 75), Color.White);
                 _spriteBatch.Draw(playButton, playbutton, Color.White);
-                board.SetupBoard();
             }
             if (screen2 == true) //Time selection screen
             {

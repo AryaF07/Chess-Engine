@@ -1,0 +1,17 @@
+== Alpha-beta vs. minimax, depth 4, move ordering off, repetition draws off ==
+  startpos          minimax    206,604 nodes     717.2 ms | alpha-beta     7,220 nodes     25.6 ms | ratio 3.5% | scores equal
+  after-e4          minimax    419,166 nodes    1452.0 ms | alpha-beta    29,724 nodes    103.7 ms | ratio 7.1% | scores equal
+  italian           minimax  1,040,115 nodes    4712.7 ms | alpha-beta    19,278 nodes     89.8 ms | ratio 1.9% | scores equal
+  qgd               minimax  1,162,090 nodes    5493.2 ms | alpha-beta    13,649 nodes     62.6 ms | ratio 1.2% | scores equal
+  ruy-closed        minimax    778,717 nodes    3379.2 ms | alpha-beta    53,121 nodes    239.6 ms | ratio 6.8% | scores equal
+  kiwipete          minimax  4,185,553 nodes   28526.2 ms | alpha-beta   597,938 nodes   4209.4 ms | ratio 14.3% | scores equal
+  cpw-position6     minimax  3,986,610 nodes   23067.1 ms | alpha-beta   206,744 nodes   1145.4 ms | ratio 5.2% | scores equal
+  cpw-position4     minimax    432,071 nodes    2427.7 ms | alpha-beta    95,404 nodes    515.7 ms | ratio 22.1% | scores equal
+  cpw-position5     minimax  2,167,397 nodes   15148.0 ms | alpha-beta    18,113 nodes    115.1 ms | ratio 0.8% | scores equal
+  legal-mate        minimax  2,334,281 nodes   14136.2 ms | alpha-beta    15,797 nodes     92.7 ms | ratio 0.7% | scores equal
+  rook-mate-in-one  minimax      4,667 nodes      13.9 ms | alpha-beta     1,631 nodes      3.6 ms | ratio 34.9% | scores equal
+  rook-endgame      minimax     32,552 nodes      42.5 ms | alpha-beta     7,365 nodes      9.6 ms | ratio 22.6% | scores equal
+  cpw-position3     minimax     46,256 nodes     117.7 ms | alpha-beta     5,274 nodes     14.1 ms | ratio 11.4% | scores equal
+  pawn-endgame      minimax      4,049 nodes       5.5 ms | alpha-beta     1,111 nodes      1.5 ms | ratio 27.4% | scores equal
+  lucena            minimax     41,708 nodes      91.4 ms | alpha-beta     1,103 nodes      2.6 ms | ratio 2.6% | scores equal
+all root scores equal

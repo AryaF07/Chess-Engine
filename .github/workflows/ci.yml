@@ -1,0 +1,47 @@
+# Correctness checks only. Timing benchmarks are not run here: shared CI machines are
+# too noisy for performance thresholds; benchmarks are recorded locally (docs/benchmarking.md).
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  engine:
+    name: Engine tests, perft and move-generator oracle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Unit, regression and perft tests
+        run: dotnet test tests/ChessNEA.Engine.Tests -c Release
+
+      - name: Published perft suite (fails on any mismatch)
+        run: dotnet run --project tools/ChessNEA.Bench -c Release -- perft --out ci-results
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compare legal moves, perft(2) and status with python-chess
+        run: |
+          python -m pip install chess
+          dotnet run --project tools/ChessNEA.Bench -c Release -- export --count 3000 --seed 1 --file ci-results/random-positions.json
+          python -I tools/oracle/compare.py ci-results/random-positions.json --out ci-results/oracle.json
+
+  gui-build:
+    name: MonoGame application build
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Restore and build (includes content compilation)
+        run: dotnet build ChessNEA.csproj -c Release
