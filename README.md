@@ -2,7 +2,7 @@
 
 A chess game in C# where you play White against a fixed-depth search engine. The engine is a separate, GUI-independent library. Its rules are checked against published perft counts and an independent move generator, and its search speed-ups are measured with a reproducible benchmark suite.
 
-This `master` is the **simplified version**: the original game plus correct rules, testing, benchmarking and two measured search improvements (alpha-beta pruning and capture ordering). A more advanced engine is preserved on a separate branch (see [Advanced version](#advanced-version)).
+It is the original game extended with correct rules, testing, benchmarking and two measured search improvements: alpha-beta pruning and capture ordering.
 
 ## Features
 
@@ -54,7 +54,7 @@ All figures below come from saved result files. The environment for all of them 
 - .NET 10.0.15, Release build, tiered compilation off, workstation GC;
 - suite `bench/suite-v1.txt`, 15 positions, fixed depth 4.
 
-The runs were recorded during development, at the commits named. Those commits are on the `advanced-engine` branch; the simplified search is the same code path without the later features. [Reproduction](#reproduction) shows that the simplified build gives identical node counts, scores and moves.
+The runs were recorded during development, at the commits named; that development history is not part of this repository. [Reproduction](#reproduction) shows that the current code gives identical node counts, scores and moves.
 
 ### Alpha-beta pruning vs. unpruned minimax
 
@@ -67,7 +67,7 @@ The runs were recorded during development, at the commits named. Those commits a
 | Time (sum over positions) | 132,541 ms | 8,615 ms | 93.5% |
 | Equal root scores / moves | 15 / 15 | | |
 
-The times are single runs per side after one warm-up, so they are indicative. They were measured on that commit's build, before the allocation improvements below; the time ratio was not re-measured on the simplified build. Node counts are deterministic and reproduce exactly.
+The times are single runs per side after one warm-up, so they are indicative. They were measured on that commit's build, before the allocation improvements below; the time ratio was not re-measured on the current code. Node counts are deterministic and reproduce exactly.
 
 ### Capture ordering (MVV-LVA) vs. unordered alpha-beta
 
@@ -97,7 +97,7 @@ The two changes were piece-square tables created once instead of on every evalua
 
 ## Correctness coverage
 
-Verified on the simplified build, commits `a936375` / `03fecf6` (same tree); outputs are in [`results/simplified-check/`](results/simplified-check):
+Verified on the current code (commit `2fdaabd`; the result files name `a936375`, a development commit with identical files); outputs are in [`results/simplified-check/`](results/simplified-check):
 
 | Check | Result |
 |---|---|
@@ -140,7 +140,7 @@ dotnet run --project tools/ChessNEA.Bench -c Release -- bench --depth 4 --runs 1
 dotnet run --project tools/ChessNEA.Bench -c Release -- bench --depth 4 --runs 1 --warmups 0 --ordering on --repetition off --out results/latest/on
 ```
 
-Interleaved timing (Git Bash). These repeat the recorded A/B runs for ordering and for allocations; the commits are on `advanced-engine`:
+Interleaved timing (Git Bash). These repeat the recorded A/B runs for ordering and for allocations; they need the development commits, which are not in this repository:
 
 ```bash
 tools/ab/ab.sh b517559 51a63ce results/latest/ordering-time 3 4 7 && python -I tools/ab/summarise.py results/latest/ordering-time --semantics score
@@ -170,21 +170,9 @@ python -I tools/oracle/compare.py results/latest/random.json --out results/lates
 - **Fixed depth 4, no time management.** There is no quiescence search, so evaluations at the horizon can be taken in the middle of an exchange. The bot always plays Black.
 - **Simple evaluation:** material plus static piece-square tables. The king uses the middlegame table in every phase.
 - **No transposition table.** The Zobrist key exists only for repetition detection.
-- **Times from earlier builds.** The recorded times come from the commits named above. The simplified build adds Zobrist hashing and repetition tracking. When they were introduced on the advanced branch, they cost +14.1% search time at depth 5, measured in that branch's configuration at the time. The simplified build's absolute times therefore differ from the recorded ones; its node counts do not.
+- **Times from earlier builds.** The recorded times come from the commits named above. The current code also maintains Zobrist keys and a repetition history, so its absolute times differ from the recorded ones; its node counts do not.
 - **Indicative minimax times.** The minimax vs. alpha-beta times are single runs. The ordering and allocation times are interleaved medians on one machine.
 - **Automatic draws.** The fifty-move rule and threefold repetition end the game automatically. FIDE makes them claimable, and automatic only at 75 moves or fivefold repetition.
 - **What the oracle covers.** It checks only what a FEN encodes; repetition is covered by the engine's own tests.
 - **Build warning.** The GUI build shows one existing MonoGame template warning about high-DPI settings in `app.manifest`.
-
-## Advanced version
-
-The branch `advanced-engine` (commit `8e37417`) keeps the full development history and the stronger engine:
-- iterative deepening with principal-variation reuse and a time budget;
-- killer moves;
-- a Zobrist transposition table with bounds and mate-score adjustment;
-- quiescence search;
-- a tapered king evaluation;
-- self-play match and fixed-time tools;
-- fixes from an external review.
-
-Its results (for example self-play strength gains) were measured on that engine, and none of them describe this version. The per-phase branches (`phase-0-baseline` … `phase-6-review-fixes`) remain as they were. The phase notes in `docs/` (`phase0-baseline.md`, `roadmap.md`) are historical: they describe that development, including features not present here.
+- **`docs/roadmap.md` is a historical plan.** It describes development stages, including features that are not part of this code.
