@@ -1,0 +1,255 @@
+{
+  "environment": {
+    "timestampUtc": "2026-11-23T11:41:21.8027707Z",
+    "gitCommit": "a936375b6d383d0b32c462bfc0b5934f2cb1e9de",
+    "gitDirty": "False",
+    "engineUnderTest": "ChessNEA.Engine (Engine/)",
+    "runtime": ".NET 10.0.15",
+    "targetFramework": ".NETCoreApp,Version=v10.0",
+    "os": "Microsoft Windows 10.0.26300",
+    "arch": "X64",
+    "cpu": "AMD Ryzen 7 5700X 8-Core Processor",
+    "logicalProcessors": "16",
+    "configuration": "Release",
+    "debuggerAttached": "False",
+    "serverGC": "False",
+    "gcLatencyMode": "Interactive",
+    "tieredCompilation": "False"
+  },
+  "data": [
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 1,
+      "Expected": 20,
+      "Observed": 20,
+      "ElapsedMs": 8.9892,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 2,
+      "Expected": 400,
+      "Observed": 400,
+      "ElapsedMs": 0.0651,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 3,
+      "Expected": 8902,
+      "Observed": 8902,
+      "ElapsedMs": 1.4492,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 4,
+      "Expected": 197281,
+      "Observed": 197281,
+      "ElapsedMs": 43.8344,
+      "Match": true
+    },
+    {
+      "Name": "startpos",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "Depth": 5,
+      "Expected": 4865609,
+      "Observed": 4865609,
+      "ElapsedMs": 734.2791,
+      "Match": true
+    },
+    {
+      "Name": "kiwipete",
+      "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "Depth": 1,
+      "Expected": 48,
+      "Observed": 48,
+      "ElapsedMs": 0.0096,
+      "Match": true
+    },
+    {
+      "Name": "kiwipete",
+      "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "Depth": 2,
+      "Expected": 2039,
+      "Observed": 2039,
+      "ElapsedMs": 0.3093,
+      "Match": true
+    },
+    {
+      "Name": "kiwipete",
+      "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "Depth": 3,
+      "Expected": 97862,
+      "Observed": 97862,
+      "ElapsedMs": 14.455,
+      "Match": true
+    },
+    {
+      "Name": "kiwipete",
+      "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "Depth": 4,
+      "Expected": 4085603,
+      "Observed": 4085603,
+      "ElapsedMs": 624.9594,
+      "Match": true
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 1,
+      "Expected": 14,
+      "Observed": 14,
+      "ElapsedMs": 0.0042,
+      "Match": true
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 2,
+      "Expected": 191,
+      "Observed": 191,
+      "ElapsedMs": 0.0398,
+      "Match": true
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 3,
+      "Expected": 2812,
+      "Observed": 2812,
+      "ElapsedMs": 0.5097,
+      "Match": true
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 4,
+      "Expected": 43238,
+      "Observed": 43238,
+      "ElapsedMs": 7.7596,
+      "Match": true
+    },
+    {
+      "Name": "position3",
+      "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "Depth": 5,
+      "Expected": 674624,
+      "Observed": 674624,
+      "ElapsedMs": 117.6943,
+      "Match": true
+    },
+    {
+      "Name": "position4",
+      "Fen": "r3k2r/Pppp1ppp/1b3nbN/nP6/BBP1P3/q4N2/Pp1P2PP/R2Q1RK1 w kq - 0 1",
+      "Depth": 1,
+      "Expected": 6,
+      "Observed": 6,
+      "ElapsedMs": 0.0076,
+      "Match": true
+    },
+    {
+      "Name": "position4",
+      "Fen": "r3k2r/Pppp1ppp/1b3nbN/nP6/BBP1P3/q4N2/Pp1P2PP/R2Q1RK1 w kq - 0 1",
+      "Depth": 2,
+      "Expected": 264,
+      "Observed": 264,
+      "ElapsedMs": 0.0538,
+      "Match": true
+    },
+    {
+      "Name": "position4",
+      "Fen": "r3k2r/Pppp1ppp/1b3nbN/nP6/BBP1P3/q4N2/Pp1P2PP/R2Q1RK1 w kq - 0 1",
+      "Depth": 3,
+      "Expected": 9467,
+      "Observed": 9467,
+      "ElapsedMs": 1.4825,
+      "Match": true
+    },
+    {
+      "Name": "position4",
+      "Fen": "r3k2r/Pppp1ppp/1b3nbN/nP6/BBP1P3/q4N2/Pp1P2PP/R2Q1RK1 w kq - 0 1",
+      "Depth": 4,
+      "Expected": 422333,
+      "Observed": 422333,
+      "ElapsedMs": 71.0127,
+      "Match": true
+    },
+    {
+      "Name": "position5",
+      "Fen": "rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQK2R w KQ - 1 8",
+      "Depth": 1,
+      "Expected": 44,
+      "Observed": 44,
+      "ElapsedMs": 0.0094,
+      "Match": true
+    },
+    {
+      "Name": "position5",
+      "Fen": "rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQK2R w KQ - 1 8",
+      "Depth": 2,
+      "Expected": 1486,
+      "Observed": 1486,
+      "ElapsedMs": 0.2166,
+      "Match": true
+    },
+    {
+      "Name": "position5",
+      "Fen": "rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQK2R w KQ - 1 8",
+      "Depth": 3,
+      "Expected": 62379,
+      "Observed": 62379,
+      "ElapsedMs": 9.898,
+      "Match": true
+    },
+    {
+      "Name": "position5",
+      "Fen": "rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQK2R w KQ - 1 8",
+      "Depth": 4,
+      "Expected": 2103487,
+      "Observed": 2103487,
+      "ElapsedMs": 307.4552,
+      "Match": true
+    },
+    {
+      "Name": "position6",
+      "Fen": "r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10",
+      "Depth": 1,
+      "Expected": 46,
+      "Observed": 46,
+      "ElapsedMs": 0.0076,
+      "Match": true
+    },
+    {
+      "Name": "position6",
+      "Fen": "r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10",
+      "Depth": 2,
+      "Expected": 2079,
+      "Observed": 2079,
+      "ElapsedMs": 0.2727,
+      "Match": true
+    },
+    {
+      "Name": "position6",
+      "Fen": "r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10",
+      "Depth": 3,
+      "Expected": 89890,
+      "Observed": 89890,
+      "ElapsedMs": 12.1777,
+      "Match": true
+    },
+    {
+      "Name": "position6",
+      "Fen": "r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10",
+      "Depth": 4,
+      "Expected": 3894594,
+      "Observed": 3894594,
+      "ElapsedMs": 529.2012,
+      "Match": true
+    }
+  ]
+}

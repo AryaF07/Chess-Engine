@@ -1,0 +1,72 @@
+{
+  "environment": {
+    "timestampUtc": "2026-11-22T23:16:24.1919937Z",
+    "gitCommit": "51a63cebe74a76454b750a762e71070bb1cd197c",
+    "gitDirty": "False",
+    "engineUnderTest": "ChessNEA.Engine (Engine/)",
+    "runtime": ".NET 10.0.15",
+    "targetFramework": ".NETCoreApp,Version=v10.0",
+    "os": "Microsoft Windows 10.0.26300",
+    "arch": "X64",
+    "cpu": "AMD Ryzen 7 5700X 8-Core Processor",
+    "logicalProcessors": "16",
+    "configuration": "Release",
+    "debuggerAttached": "False",
+    "serverGC": "False",
+    "gcLatencyMode": "Interactive",
+    "tieredCompilation": "False",
+    "suite": "suite-v1.txt",
+    "suiteSha256": "2be71efec97707e55cf698a767e25b3b2c836a6e27df9c3827f4c23cf7be33f1",
+    "suitePositions": "15",
+    "benchDepth": "4",
+    "benchRuns": "7",
+    "benchWarmups": "1",
+    "alphaBeta": "True",
+    "moveOrdering": "True",
+    "transpositionTable": "none"
+  },
+  "data": [
+    {
+      "Name": "Bot.Evaluate",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "CallsPerRepetition": 200000,
+      "NsPerCall": [
+        198.706,
+        186.0855,
+        185.7915,
+        185.374,
+        184.9205
+      ],
+      "BytesPerCall": [
+        0.0002,
+        0.0002,
+        0.0002,
+        0.0002,
+        0.0002
+      ],
+      "MedianNsPerCall": 185.7915,
+      "MedianBytesPerCall": 0.0002
+    },
+    {
+      "Name": "Position.GenerateLegalMoves",
+      "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "CallsPerRepetition": 20000,
+      "NsPerCall": [
+        2343.835,
+        2178.64,
+        2144.815,
+        2143.175,
+        2144.5
+      ],
+      "BytesPerCall": [
+        1328.002,
+        1328.002,
+        1328.002,
+        1328.002,
+        1328.002
+      ],
+      "MedianNsPerCall": 2144.815,
+      "MedianBytesPerCall": 1328.002
+    }
+  ]
+}

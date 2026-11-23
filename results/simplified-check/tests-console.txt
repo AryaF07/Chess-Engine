@@ -1,0 +1,9 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  ChessNEA.Engine -> C:\Users\AryaF\Documents\Chess-Engine\Engine\bin\Release\net10.0\ChessNEA.Engine.dll
+  ChessNEA.Bench -> C:\Users\AryaF\Documents\Chess-Engine\tools\ChessNEA.Bench\bin\Release\net10.0\ChessNEA.Bench.dll
+  ChessNEA.Engine.Tests -> C:\Users\AryaF\Documents\Chess-Engine\tests\ChessNEA.Engine.Tests\bin\Release\net10.0\ChessNEA.Engine.Tests.dll
+Test run for C:\Users\AryaF\Documents\Chess-Engine\tests\ChessNEA.Engine.Tests\bin\Release\net10.0\ChessNEA.Engine.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:   174, Skipped:     0, Total:   174, Duration: 5 s - ChessNEA.Engine.Tests.dll (net10.0)

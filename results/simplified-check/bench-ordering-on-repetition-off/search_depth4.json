@@ -1,0 +1,612 @@
+{
+  "environment": {
+    "timestampUtc": "2026-11-23T11:41:39.4015443Z",
+    "gitCommit": "a936375b6d383d0b32c462bfc0b5934f2cb1e9de",
+    "gitDirty": "False",
+    "engineUnderTest": "ChessNEA.Engine (Engine/)",
+    "runtime": ".NET 10.0.15",
+    "targetFramework": ".NETCoreApp,Version=v10.0",
+    "os": "Microsoft Windows 10.0.26300",
+    "arch": "X64",
+    "cpu": "AMD Ryzen 7 5700X 8-Core Processor",
+    "logicalProcessors": "16",
+    "configuration": "Release",
+    "debuggerAttached": "False",
+    "serverGC": "False",
+    "gcLatencyMode": "Interactive",
+    "tieredCompilation": "False",
+    "suite": "suite-v1.txt",
+    "suiteSha256": "fc0bbe5d069cc3694f2a90b6dc02961ceb3de97ad9ca3b6b03b9c20eb27c1ff7",
+    "suitePositions": "15",
+    "benchDepth": "4",
+    "benchRuns": "1",
+    "benchWarmups": "0",
+    "alphaBeta": "True",
+    "moveOrdering": "True",
+    "repetitionDraws": "False"
+  },
+  "data": {
+    "summary": {
+      "Positions": 15,
+      "TotalNodes": 106727,
+      "TotalLeafEvaluations": 82914,
+      "SumOfMedianMs": 490.11890000000005,
+      "NodesPerSecond": 217757.36459051055,
+      "TotalMedianAllocatedBytes": 553984,
+      "SumOfMedianGcPauseMs": 0,
+      "Aggregation": "Totals are sums over positions; SumOfMedianMs sums each position\u0027s median; NodesPerSecond = TotalNodes / SumOfMedianMs."
+    },
+    "positions": [
+      {
+        "Name": "startpos",
+        "Category": "opening",
+        "Fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "Depth": 4,
+        "Score": 0,
+        "BestMove": "b1c3",
+        "Counters": {
+          "Nodes": 6308,
+          "LeafEvaluations": 4998,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 1310,
+          "Cutoffs": 1106,
+          "FirstMoveCutoffs": 573,
+          "LegalMovesGenerated": 155189
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 26.6417,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 26.6417,
+        "MinMs": 26.6417,
+        "MaxMs": 26.6417,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 236771.6774830435,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "after-e4",
+        "Category": "opening",
+        "Fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "Depth": 4,
+        "Score": -70,
+        "BestMove": "b8c6",
+        "Counters": {
+          "Nodes": 15039,
+          "LeafEvaluations": 12887,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 2152,
+          "Cutoffs": 1774,
+          "FirstMoveCutoffs": 1457,
+          "LegalMovesGenerated": 378593
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 54.6454,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 54.6454,
+        "MinMs": 54.6454,
+        "MaxMs": 54.6454,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 275210.72221998556,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "italian",
+        "Category": "opening",
+        "Fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "Depth": 4,
+        "Score": -110,
+        "BestMove": "g8f6",
+        "Counters": {
+          "Nodes": 12731,
+          "LeafEvaluations": 10233,
+          "TerminalNodes": 6,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 2492,
+          "Cutoffs": 2147,
+          "FirstMoveCutoffs": 2069,
+          "LegalMovesGenerated": 391441
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 58.3138,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 58.3138,
+        "MinMs": 58.3138,
+        "MaxMs": 58.3138,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 218318.8199019786,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "qgd",
+        "Category": "opening",
+        "Fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        "Depth": 4,
+        "Score": 30,
+        "BestMove": "c4d5",
+        "Counters": {
+          "Nodes": 3722,
+          "LeafEvaluations": 2450,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 1272,
+          "Cutoffs": 1196,
+          "FirstMoveCutoffs": 1178,
+          "LegalMovesGenerated": 119940
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 17.6476,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 17.6476,
+        "MinMs": 17.6476,
+        "MaxMs": 17.6476,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 210906.86552279064,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "ruy-closed",
+        "Category": "middlegame",
+        "Fen": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 b - - 0 9",
+        "Depth": 4,
+        "Score": -50,
+        "BestMove": "c8b7",
+        "Counters": {
+          "Nodes": 15739,
+          "LeafEvaluations": 12184,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 3555,
+          "Cutoffs": 3113,
+          "FirstMoveCutoffs": 3009,
+          "LegalMovesGenerated": 483038
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 68.2753,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 68.2753,
+        "MinMs": 68.2753,
+        "MaxMs": 68.2753,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 230522.6048073022,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "kiwipete",
+        "Category": "middlegame",
+        "Fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+        "Depth": 4,
+        "Score": -50,
+        "BestMove": "e2a6",
+        "Counters": {
+          "Nodes": 6908,
+          "LeafEvaluations": 4453,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 2455,
+          "Cutoffs": 2341,
+          "FirstMoveCutoffs": 2317,
+          "LegalMovesGenerated": 281261
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 46.9804,
+            "AllocatedBytes": 13280,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 46.9804,
+        "MinMs": 46.9804,
+        "MaxMs": 46.9804,
+        "MedianAllocatedBytes": 13280,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 147040.04223037692,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "cpw-position6",
+        "Category": "middlegame",
+        "Fen": "r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10",
+        "Depth": 4,
+        "Score": 110,
+        "BestMove": "c3d5",
+        "Counters": {
+          "Nodes": 16065,
+          "LeafEvaluations": 12941,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 3124,
+          "Cutoffs": 2756,
+          "FirstMoveCutoffs": 2738,
+          "LegalMovesGenerated": 656572
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 90.8223,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 90.8223,
+        "MinMs": 90.8223,
+        "MaxMs": 90.8223,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 176883.87103167395,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "cpw-position4",
+        "Category": "tactical",
+        "Fen": "r3k2r/Pppp1ppp/1b3nbN/nP6/BBP1P3/q4N2/Pp1P2PP/R2Q1RK1 w kq - 0 1",
+        "Depth": 4,
+        "Score": 615,
+        "BestMove": "g1h1",
+        "Counters": {
+          "Nodes": 8282,
+          "LeafEvaluations": 7572,
+          "TerminalNodes": 3,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 707,
+          "Cutoffs": 499,
+          "FirstMoveCutoffs": 485,
+          "LegalMovesGenerated": 297450
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 50.5283,
+            "AllocatedBytes": 284320,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 50.5283,
+        "MinMs": 50.5283,
+        "MaxMs": 50.5283,
+        "MedianAllocatedBytes": 284320,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 163908.14652382923,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "cpw-position5",
+        "Category": "tactical",
+        "Fen": "rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQK2R w KQ - 1 8",
+        "Depth": 4,
+        "Score": -275,
+        "BestMove": "d7c8q",
+        "Counters": {
+          "Nodes": 3736,
+          "LeafEvaluations": 1867,
+          "TerminalNodes": 3,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 1866,
+          "Cutoffs": 1791,
+          "FirstMoveCutoffs": 1790,
+          "LegalMovesGenerated": 126715
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 19.816,
+            "AllocatedBytes": 105952,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 19.816,
+        "MinMs": 19.816,
+        "MaxMs": 19.816,
+        "MedianAllocatedBytes": 105952,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 188534.5175615664,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "legal-mate",
+        "Category": "tactical",
+        "Fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 10",
+        "Depth": 4,
+        "Score": -99999996,
+        "BestMove": "d5f6",
+        "Counters": {
+          "Nodes": 5824,
+          "LeafEvaluations": 3839,
+          "TerminalNodes": 4,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 1981,
+          "Cutoffs": 1859,
+          "FirstMoveCutoffs": 1857,
+          "LegalMovesGenerated": 209551
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 35.1349,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 35.1349,
+        "MinMs": 35.1349,
+        "MaxMs": 35.1349,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 165761.109324347,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "rook-mate-in-one",
+        "Category": "tactical",
+        "Fen": "k7/8/8/8/8/1r6/r7/7K b - - 0 1",
+        "Depth": 4,
+        "Score": 99999998,
+        "BestMove": "b3b1",
+        "Counters": {
+          "Nodes": 1631,
+          "LeafEvaluations": 777,
+          "TerminalNodes": 18,
+          "DrawRuleNodes": 5,
+          "InteriorNodes": 831,
+          "Cutoffs": 797,
+          "FirstMoveCutoffs": 792,
+          "LegalMovesGenerated": 24526
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 3.7232,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 3.7232,
+        "MinMs": 3.7232,
+        "MaxMs": 3.7232,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 438064.03094112594,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "rook-endgame",
+        "Category": "endgame",
+        "Fen": "8/5pk1/6p1/8/8/6P1/5PK1/3R4 b - - 0 1",
+        "Depth": 4,
+        "Score": -520,
+        "BestMove": "g7g8",
+        "Counters": {
+          "Nodes": 7210,
+          "LeafEvaluations": 6501,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 709,
+          "Cutoffs": 421,
+          "FirstMoveCutoffs": 225,
+          "LegalMovesGenerated": 55906
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 9.6371,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 9.6371,
+        "MinMs": 9.6371,
+        "MaxMs": 9.6371,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 748150.3771881582,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "cpw-position3",
+        "Category": "endgame",
+        "Fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+        "Depth": 4,
+        "Score": -10,
+        "BestMove": "b4f4",
+        "Counters": {
+          "Nodes": 1743,
+          "LeafEvaluations": 1015,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 728,
+          "Cutoffs": 621,
+          "FirstMoveCutoffs": 589,
+          "LegalMovesGenerated": 24926
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 4.7204,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 4.7204,
+        "MinMs": 4.7204,
+        "MaxMs": 4.7204,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 369248.3687823066,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "pawn-endgame",
+        "Category": "endgame",
+        "Fen": "8/8/4k3/8/2P5/4K3/8/8 w - - 0 1",
+        "Depth": 4,
+        "Score": -100,
+        "BestMove": "e3f2",
+        "Counters": {
+          "Nodes": 1084,
+          "LeafEvaluations": 761,
+          "TerminalNodes": 0,
+          "DrawRuleNodes": 11,
+          "InteriorNodes": 312,
+          "Cutoffs": 220,
+          "FirstMoveCutoffs": 145,
+          "LegalMovesGenerated": 8859
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 1.5138,
+            "AllocatedBytes": 10976,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 1.5138,
+        "MinMs": 1.5138,
+        "MaxMs": 1.5138,
+        "MedianAllocatedBytes": 10976,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 716078.7422380763,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      },
+      {
+        "Name": "lucena",
+        "Category": "endgame",
+        "Fen": "1K1k4/1P6/8/8/8/8/r7/2R5 w - - 0 1",
+        "Depth": 4,
+        "Score": -105,
+        "BestMove": "c1e1",
+        "Counters": {
+          "Nodes": 705,
+          "LeafEvaluations": 436,
+          "TerminalNodes": 7,
+          "DrawRuleNodes": 0,
+          "InteriorNodes": 262,
+          "Cutoffs": 226,
+          "FirstMoveCutoffs": 202,
+          "LegalMovesGenerated": 10405
+        },
+        "Samples": [
+          {
+            "Run": 1,
+            "ElapsedMs": 1.7187,
+            "AllocatedBytes": 29696,
+            "Gen0": 0,
+            "Gen1": 0,
+            "Gen2": 0,
+            "GcPauseMs": 0
+          }
+        ],
+        "MedianMs": 1.7187,
+        "MinMs": 1.7187,
+        "MaxMs": 1.7187,
+        "MedianAllocatedBytes": 29696,
+        "MedianGcPauseMs": 0,
+        "NodesPerSecond": 410193.75109094084,
+        "CountersIdenticalAcrossRuns": true,
+        "ResultIdenticalAcrossRuns": true,
+        "Error": null
+      }
+    ]
+  }
+}
